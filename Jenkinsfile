@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'YOUR_DOCKERHUB_USERNAME/jenkins-assignment-app'
+        DOCKER_IMAGE = 'rubabrafique12/jenkins-assignment-app'
     }
 
     stages {
