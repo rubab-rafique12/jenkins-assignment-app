@@ -1,0 +1,21 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: assignment-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: assignment-app
+  template:
+    metadata:
+      labels:
+        app: assignment-app
+    spec:
+      containers:
+        - name: assignment-app
+          image: rubabrafique12/jenkins-assignment-app:v5
+          ports:
+            - containerPort: 80
+          imagePullPolicy: Always
